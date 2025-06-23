@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Website</title>
+
+    <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo"><i class='bx bxs-t-shirt'></i>Stylful</a>
+    <ul class="navbar">
+        <li><a href="shopping.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="header-icons">
+        <i class='bx bx-menu' id="menu-icon" ></i>
+        <i class='bx bx-search' id="search-icon"></i>
+        <i class='bx bx-cart-alt' id="cart-icon"></i>
+        <i class='bx bx-user' id="user-icon"></i>
+    </div>
+
+    <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here...">
+    </div>
+
+    <div class="user">
+        <h2>Login Now</h2>
+        <input type="email" placeholder="Your Email...">
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="submit" value="Login" class="login-btn">
+        <p>Forget Password<a href="#">Reset Now</a></p>
+        <p>Don't have account<a href="#">Create One</a></p>
+    </div>
+
+</header>
+
+<section id="page-header">
+    <h2>#Stayhome</h2>
+    <p>Save more with coupons & up to 70% off!</p>
+</section>
+
+<section id="checkout">
+     <h2>Click on proceed to checkout for payment methods<i class='bx bx-down-arrow-alt'></i></h2>
+    <div>
+        <button id="checkout-btn" class="normal">Proceed to checkout</button>
+    </div>
+</section>
+
+
+<section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+    </div>
+    <section id="payment-options" style="display: none;">
+        <h2>Select Payment Method</h2>
+        <div id="payment-methods">
+            <input type="radio" id="Gpay" name="payment-method" value="Gpay">
+            <label for="Gpay">Gpay</label><br>
+            <input type="radio" id="Paytm" name="payment-method" value="Paytm">
+            <label for="Paytm">Paytm</label><br>
+            <input type="radio" id="Debit-card" name="payment-method" value="Debit-card">
+            <label for="Debit-card">Debit-card</label><br>
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+            <label for="credit-card">Credit Card</label><br>
+            <!-- Add more payment options as needed -->
+        </div>
+        <div id="payment-details"></div>
+        <button id="enter-details-btn" class="normal">Enter Details</button><br><br>
+        <button id="confirm-payment-btn" class="normal">Confirm Payment</button>
+
+        <div id="payment-success" style="display: none;">
+            <h2>Thank you! Your payment is successful.</h2>
+        </div>
+    </section>
+
+    <script>
+        // Function to show payment details form fields based on the selected payment method
+        function showPaymentDetails() {
+            var selectedMethod = document.querySelector('input[name="payment-method"]:checked').value;
+            var paymentDetails = document.getElementById('payment-details');
+            
+            // Clear previous payment details
+            paymentDetails.innerHTML = '';
+    
+            // Show appropriate payment details form fields
+            if (selectedMethod === 'Gpay' || selectedMethod === 'Paytm') {
+                paymentDetails.innerHTML = '<input type="text" id="upi-id" placeholder="Enter your UPI ID">';
+            } else if (selectedMethod === 'Debit-card' || selectedMethod === 'credit-card') {
+                paymentDetails.innerHTML = '<input type="text" id="card-number" placeholder="Card Number">' +
+                                           '<input type="text" id="expiry-date" placeholder="Expiry Date (MM/YY)">' +
+                                           '<input type="text" id="cvv" placeholder="CVV">';
+            }
+        }
+    
+        // Event listener for when the "Proceed to checkout" button is clicked
+        document.getElementById('checkout-btn').addEventListener('click', function() {
+            document.getElementById('payment-options').style.display = 'block';
+        });
+    
+        // Event listener for when the "Enter Details" button is clicked
+        document.getElementById('enter-details-btn').addEventListener('click', function() {
+            showPaymentDetails();
+        });
+    
+        // Event listener for when the "Confirm Payment" button is clicked
+        document.getElementById('confirm-payment-btn').addEventListener('click', function() {
+            // You can add additional logic here for payment confirmation, if needed
+            document.getElementById('payment-success').style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>

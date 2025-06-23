@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo"><i class='bx bxs-t-shirt'></i>Stylful</a>
+
+    <ul class="navbar">
+        <li><a href="shopping.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="header-icons">
+        <i class='bx bx-menu' id="menu-icon" ></i>
+        <i class='bx bx-search' id="search-icon"></i>
+        <a href="#carts"><i class='bx bx-cart-alt' id="cart-icon"></i></a>
+        <a href="#wishlist"><i class='bx bxs-heart' id="wishlist-icon"></i></a>
+        <i class='bx bx-user' id="user-icon"></i>
+    </div>
+
+    <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here...">
+    </div>
+
+    <div class="user">
+        <h2>Login Now</h2>
+        <input type="email" placeholder="Your Email...">
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="submit" value="Login" class="login-btn">
+        <p>Forget Password<a href="#">Reset Now</a></p>
+        <p>Don't have account<a href="#">Create One</a></p>
+    </div>
+
+</header>
+
+
+
+<section id="page-header">
+    <h2>#Stayhome</h2>
+    <p>Save more with coupons & up to 70% off!</p>
+</section>
+
+<section id="product1" class="section-p1">
+    <div class="pro-container">
+        <!-- Product 1 -->
+        <div class="pro">
+            <img src="photos1/tt.jpg" alt="">
+            <div class="des">
+                <span class="brand">adidas</span>
+                <h5>Fancy T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$78</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="pro">
+            <img src="photos1/tt2.jpg" alt="">
+            <div class="des">
+                <span class="brand">Levis</span>
+                <h5>Men's Shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$78</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1//y.webp" alt="">
+            <div class="des">
+                <span class="brand">Jack and Jones</span>
+                <h5>T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$70</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t8.webp" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>Women's Top</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$100</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t15.webp" alt="">
+            <div class="des">
+                <span class="brand">FCUK</span>
+                <h5>Wide leg pants</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$50</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t7.webp" alt="">
+            <div class="des">
+                <span class="brand">adidas</span>
+                <h5>Brown T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$40</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t12.webp" alt="">
+            <div class="des">
+                <span class="brand">Puma</span>
+                <h5>Slim Fit T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$60</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t1.webp" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>Women's T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$80</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t2.webp" alt="">
+            <div class="des">
+                <span class="brand">adidas</span>
+                <h5>Loose Fit T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$95</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t3.webp" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>Regular Fit Shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$85</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img src="photos1/t9.webp" alt="">
+            <div class="des">
+                <span class="brand">Zudio</span>
+                <h5>Jeans Regular Wear</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$70</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+
+        <div class="pro">
+            <img id="img" src="photos1/t14.jpg" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>Polo T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+        <div class="pro">
+            <img id="img" src="photos1/t6.webp" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>Blue shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+ 
+        <div class="pro">
+            <img id="img" src="photos1/t13.webp" alt="">
+            <div class="des">
+                <span class="brand">Zudio</span>
+                <h5>Regular size T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+        <div class="pro">
+            <img id="img" src="photos1/t4.webp" alt="">
+            <div class="des">
+                <span class="brand">H&M</span>
+                <h5>V-neck T-shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart' ></i></button>
+            </div>
+        </div>
+        <div class="pro">
+            <img id="img" src="photos1/t7.webp" alt="">
+            <div class="des">
+                <span class="brand">Zudio</span>
+                <h5>Printed shirt</h5>
+                <div class="size-dropdown">
+                    <label for="size-select">Size:</label>
+                    <select id="size-select">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+            <div class="cart1">
+                <a href="#" class="add-to-cart"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="wish">
+                <button class="add-to-wishlist" onclick="toggleWishlistColor(this)"><i class='bx bxs-heart'></i></button>
+            </div>
+        </div>        
+    </div>
+</section>
+
+
+<section id="carts">
+    <div id="cart" class="cart">
+        <h2><i class='bx bx-cart-alt'></i> Shopping Cart</h2>
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+        <a href="cart.html"><button id="proceed-to-payment">Proceed to Payment</button></a>
+    </div>
+</section>
+
+<section id="wishlist">
+    <div id="wishlist" class="wishlist">
+        <h2><i class='bx bxs-heart' ></i> Wishlist</h2>
+        <ul id="wishlist-items">
+            <!-- Wishlist items will be added dynamically here -->
+        </ul>
+    </div>
+</section>
+
+
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign Up For</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div>
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<footer class="section-pl">
+    <div class="col">
+        <a href="#" class="logo"><i class='bx bxs-t-shirt'></i>Stylful</a>
+        <h4>Contact</h4>
+        <p><strong>Phone: </strong>+91 9876543210 /+91 8769546897</p>
+        <p><strong>Hours: </strong>10:00-18:00, Mon-Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-pinterest' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="photos1/app.jpg" alt="">
+        <img src="photos1/play.jpg" alt="">
+    </div>
+    </div>
+        <div>
+            <p>Secured Payment Gateways</p>
+            <img src="photos1/pay.png" alt="">
+        </div>
+<div class="copyright">
+    <p>Tanisha Chauhan <br> 22BCE3751</p>
+</div>
+
+</footer>
+<script>
+    let search = document.querySelector('.search-box');
+                document.querySelector('#search-icon').onclick = () =>{
+                search.classList.toggle('active');
+                user.classList.remove('active');
+                }
+                let user = document.querySelector('.user');
+                document.querySelector('#user-icon').onclick = () =>{
+                user.classList.toggle('active');
+                search.classList.remove('active');
+                }
+
+function addToCart(brand, name, price, size) {
+    // Check if the item already exists in the cart
+    var existingItem = document.querySelector('#cart-items tr[data-name="' + name + '"][data-size="' + size + '"]');
+    if (existingItem) {
+        // If item exists, increment its quantity
+        var quantity = parseInt(existingItem.getAttribute('data-quantity')) + 1;
+        existingItem.setAttribute('data-quantity', quantity);
+        existingItem.querySelector('.quantity').textContent = quantity;
+    } else {
+        // If item doesn't exist, create a new table row
+        var tableBody = document.querySelector('#cart-items tbody');
+        var newRow = document.createElement('tr');
+        newRow.setAttribute('data-name', name);
+        newRow.setAttribute('data-size', size);
+        newRow.setAttribute('data-quantity', 1);
+
+        // Create cells for brand, name, size, quantity, price, and remove button
+        newRow.innerHTML = `
+            <td class="cart-column brand">${brand}</td>
+            <td class="cart-column name">${name}</td>
+            <td class="cart-column size">${size}</td>
+            <td class="cart-column quantity">1</td>
+            <td class="cart-column price">$${price.toFixed(2)}</td>
+            <td class="cart-column">
+                <button class="remove-item"><i class="bx bx-x-circle"></i></button>
+            </td>
+        `;
+
+        // Add event listener to remove button
+        newRow.querySelector('.remove-item').addEventListener('click', function() {
+            newRow.remove();
+            updateTotal();
+        });
+
+        // Append the new row to the table
+        tableBody.appendChild(newRow);
+    }
+
+    // Update total price
+    updateTotal();
+}
+function updateTotal() {
+    var cartRows = document.querySelectorAll('#cart-items tbody tr');
+    var total = 0;
+    cartRows.forEach(function(row) {
+        var price = parseFloat(row.querySelector('.price').textContent.replace('$', ''));
+        var quantity = parseInt(row.getAttribute('data-quantity'));
+        total += price * quantity;
+    });
+    document.getElementById('cart-total').textContent = '$' + total.toFixed(2);
+}
+
+
+// Add event listeners to "Add to Cart" buttons
+var addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        var productContainer = button.closest('.pro');
+        var brand = productContainer.querySelector('.brand').textContent;
+        var name = productContainer.querySelector('h5').textContent;
+        var price = parseFloat(productContainer.querySelector('h4').textContent.replace('$', ''));
+        var size = productContainer.querySelector('#size-select').value;
+        addToCart(brand, name, price, size);
+    });
+});
+function addToWishlist(brand, name, size) {
+    // Check if the item already exists in the wishlist
+    var existingItem = document.querySelector('#wishlist-items li[data-name="' + name + '"][data-size="' + size + '"]');
+    if (!existingItem) {
+        // If item doesn't exist, create a new list item
+        var listItem = document.createElement('li');
+        listItem.setAttribute('data-name', name);
+        listItem.setAttribute('data-size', size);
+
+        // Create columns for brand, name, size, and remove button
+        var brandColumn = document.createElement('span');
+        brandColumn.classList.add('wishlist-column', 'brand');
+        brandColumn.textContent = brand;
+
+        var nameColumn = document.createElement('span');
+        nameColumn.classList.add('wishlist-column', 'name');
+        nameColumn.textContent = name;
+
+        var sizeColumn = document.createElement('span');
+        sizeColumn.classList.add('wishlist-column', 'size');
+        sizeColumn.textContent = size;
+
+        var removeButton = document.createElement('button');
+        removeButton.innerHTML = '<i class="bx bx-x-circle"></i>';
+        removeButton.classList.add('wishlist-column', 'remove-item');
+
+        // Add event listener to remove button
+        removeButton.addEventListener('click', function() {
+            listItem.remove();
+        });
+
+        // Append columns and remove button to list item
+        listItem.appendChild(brandColumn);
+        listItem.appendChild(nameColumn);
+        listItem.appendChild(sizeColumn);
+        listItem.appendChild(removeButton);
+
+        // Add the item to the wishlist
+        document.getElementById('wishlist-items').appendChild(listItem);
+    } else {
+        // If item already exists, remove it from the wishlist
+        existingItem.remove();
+        // Remove the red color from the button
+        var addToWishlistButton = document.querySelector('.add-to-wishlist.active');
+        if (addToWishlistButton) {
+            addToWishlistButton.classList.remove('active');
+        }
+    }
+}
+
+// Add event listeners to "Add to Wishlist" buttons
+var addToWishlistButtons = document.querySelectorAll('.add-to-wishlist');
+addToWishlistButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        var productContainer = button.closest('.pro');
+        var brand = productContainer.querySelector('.brand').textContent;
+        var name = productContainer.querySelector('h5').textContent;
+        var size = productContainer.querySelector('#size-select').value;
+        addToWishlist(brand, name, size);
+    });
+});
+
+
+// function toggleWishlistColor(button) {
+//     button.classList.toggle('active');
+// }
+function toggleWishlistColor(button) {
+    // If the clicked button is already active, remove its active class
+    if (button.classList.contains('active')) {
+        button.classList.remove('active');
+    } else {
+        // If the clicked button is not active, remove active class from all buttons
+        var wishlistButtons = document.querySelectorAll('.wishlist-button');
+        wishlistButtons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Add active class to the clicked button
+        button.classList.add('active');
+    }
+}
+function toggleWishlistColor(button) {
+    // Toggle the 'active' class on the clicked button
+    button.classList.toggle('active');
+}
+
+</script>
+</body>
+</html>
